@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+    <form action="{{ url_for('mass_ask') }}" method=post class=add-entry>
+      <br>Enter a molecule: <input type=text size=40 name=whatmolecule>
+      <br><input type=submit value='Get the Mass'>
+    </form>
+
+    <p>The atomic mass of {{ chemical }} is {{ mass }}</p>
+{% endblock %}
