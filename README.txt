@@ -9,6 +9,11 @@ static - folder for static elements (just some css for jinja at the moment)
 docs - an empty folder for docs, nothing there right now
 tests - a sub-package holding the unittest tests 
 
+TO SETUP the local development environment
+    make sure you have a virtual environment installed
+    run "pip install -e ." in the terminal to get setup.py to run and install the development environment
+    run "python -m unittest discover" to run the tests from the command line.
+
 TO RUN THE FLASK APPLICATION SERVER:
     with moleflask and flask installed you can run the moleflask app using the flask development server:
         $ FLASK_APP=moleflask.mflask.py flask run
